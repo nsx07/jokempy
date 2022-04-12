@@ -12,11 +12,11 @@ while exit != "desligar":
     modo = int(input("Digite o modo de jogo que gostaria: "))
 #---Humano vs Humano---------------------------------------------------------------------------------------------------
     if modo == 1:
-        saida1 = 0
+        saida1 = 1
         win1 = 0
         win2 = 0
         tie = 0
-        while saida1 != "sair":
+        while saida1 != 0:
             print("Você escolheu o modo Humano vs Humano\n")
             print("Opções de jogada;\n","1 - Pedra\n","2 - Papel\n","3 - Tesoura\n")
             jogada1 = int(input("Player 1! Digite aqui o número da sua jogada: "))
@@ -33,18 +33,20 @@ while exit != "desligar":
             elif (jogada1 or jogada2 != {1,2,3}):
                 print("Ação inexistente. Tente novamente com jogadas entre 1 e 3.\n")
             #---Sair
-            sair = input("Se deseja sair do jogo, digite 'sair'. Caso contrário, pressione Enter: \n")
-            if sair == "sair":
-                saida1 = "sair"
+            sair = float(input("Se deseja sair do jogo, digite '0'. Caso contrário, digite '1': \n"))
+            if sair == 0:
+                saida1 = 0
+            elif sair == 1:
+                saida1 == 1
         print('As estatística foram;\n','O jogador 1 ganhou:',win1,'\n','O jogador 2 ganhou:',win2,'\n','e houveram',tie,'empates\n')
              
 #---Humano vs Computador----------------------------------------------------------------------------------------------- 
     elif modo == 2:
         print("Você escolheu o modo Humano vs PC\n","Opções de jogada;\n","1 - Pedra\n","2 - Papel\n","3 - Tesoura\n")
-        saida2 = 0
+        saida2 = 1
         winPlayer = 0
         tie_humanPC = 0
-        while saida2 != 'sair':
+        while saida2 != 0:
             human = int(input("Player! Digite aqui o número da sua jogada: "))
             pc = randint(1,3)
             print("PC jogou:",pc)
@@ -59,17 +61,19 @@ while exit != "desligar":
                 tie_humanPC = + 1
             elif (human or pc != [1,2,3]):
                 print("Ação inexistente. Tente novamente com jogadas entre 1 e 3.\n")
-            sair = input("Se deseja sair desse modo, digite 'sair'. Caso contrário pressione Enter: \n")
-            if sair == "sair":
-                saida2 = "sair"
+            sair = int(input("Se deseja sair do jogo, digite '0'. Caso contrário, digite '1': \n"))
+            if sair == 0:
+                saida2 = 0
+            elif sair == 1:
+                saida2 == 1
         print('As estatística foram;\n','O Player ganhou:',winPlayer,'\n','O PC ganhou:',winPC,'\n','e houveram',tie,'empates\n')
 #---Computador vs Computador-------------------------------------------------------------------------------------------
     elif modo == 3:
-        saida3 = 0
+        saida3 = 1
         win_pc1 = 0
         win_pc2 = 0
         tie_pcPc = 0
-        while saida3 != "sair":
+        while saida3 != 0:
             print("Você escolheu o modo PC vs PC\n")
             pc1 = randint(1,3)
             pc2 = randint(1,3)
@@ -86,9 +90,11 @@ while exit != "desligar":
                 tie_pcPc = + 1
             elif pc1 or pc2 != {1,2,3}:
                 print("PC jogou sujo!!!\n")
-            sair = input("Se deseja sair do jogo, digite 'sair'. Caso contrário, pressione Enter: \n")
-            if sair == "sair":
-                saida2 = "sair"
+            sair = int(input("Se deseja sair do jogo, digite '0'. Caso contrário, digite '1': \n"))
+            if sair == 0:
+                saida3 = 0
+            elif sair == 1:
+                saida3 == 1
         print('As estatística foram;\n','O PC-1 ganhou:',win_pc1,'\n','O PC-2 ganhou:',win_pc2,'\n','e houveram',tie_pcPc,'empates\n')
 #---Sair do Jogo--------------------------------------------------------------------------------------------------------
     elif modo  == 0:
