@@ -66,7 +66,7 @@ while exit != "desligar":
                 saida2 = 0
             elif sair == 1:
                 saida2 == 1
-        print('As estatística foram;\n','O Player ganhou:',winPlayer,'\n','O PC ganhou:',winPC,'\n','e houveram',tie,'empates\n')
+        print('As estatística foram;\n','O Player ganhou:',winPlayer,'\n','O PC ganhou:',winPC,'\n','e houveram',tie_humanPC,'empates\n')
 #---Computador vs Computador-------------------------------------------------------------------------------------------
     elif modo == 3:
         saida3 = 1
