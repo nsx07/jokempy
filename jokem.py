@@ -4,13 +4,14 @@ from random import randint
 #                  1 =>Pedra: papel > pedra > tesoura
 #                  2 =>Papel: tesoura > papel > pedra
 #                  3 =>Tesoura: pedra > tesoura > papel
-#---Modos de jogo------------------------------------------------------------------------------------------------------
-print("Seja bem-vindo ao Jokempy\n","Modos de jogo\n","1 - Humano vs Humano\n","2 - Humano vs PC\n","3 - PC vs PC\n")
+#---Modos_de_jogo------------------------------------------------------------------------------------------------------
+print("Seja bem-vindo ao Jokempy\n")
+print("Modos de jogo\n","1 - Humano vs Humano\n","2 - Humano vs PC\n","3 - PC vs PC\n")
 print("0 - Se deseja parar de jogar qualquer modo.\n")
 exit = 0
 while exit != "desligar":
     modo = int(input("Digite o modo de jogo que gostaria: "))
-#---Humano vs Humano---------------------------------------------------------------------------------------------------
+#---Humano_vs_Humano---------------------------------------------------------------------------------------------------
     if modo == 1:
         saida1 = 1
         win1 = 0
@@ -32,15 +33,14 @@ while exit != "desligar":
                 tie = + 1
             elif (jogada1 or jogada2 != {1,2,3}):
                 print("Ação inexistente. Tente novamente com jogadas entre 1 e 3.\n")
-            #---Sair
+            #---Sair_Modo----------------------------------------------------------------------------------------------
             sair = float(input("Se deseja sair do jogo, digite '0'. Caso contrário, digite '1': \n"))
             if sair == 0:
                 saida1 = 0
             elif sair == 1:
                 saida1 == 1
         print('As estatística foram;\n','O jogador 1 ganhou:',win1,'\n','O jogador 2 ganhou:',win2,'\n','e houveram',tie,'empates\n')
-             
-#---Humano vs Computador----------------------------------------------------------------------------------------------- 
+#---Humano_vs_Computador----------------------------------------------------------------------------------------------- 
     elif modo == 2:
         print("Você escolheu o modo Humano vs PC\n","Opções de jogada;\n","1 - Pedra\n","2 - Papel\n","3 - Tesoura\n")
         saida2 = 1
@@ -61,13 +61,14 @@ while exit != "desligar":
                 tie_humanPC = + 1
             elif (human or pc != [1,2,3]):
                 print("Ação inexistente. Tente novamente com jogadas entre 1 e 3.\n")
+            #---Sair_Modo----------------------------------------------------------------------------------------------
             sair = int(input("Se deseja sair do jogo, digite '0'. Caso contrário, digite '1': \n"))
             if sair == 0:
                 saida2 = 0
             elif sair == 1:
                 saida2 == 1
         print('As estatística foram;\n','O Player ganhou:',winPlayer,'\n','O PC ganhou:',winPC,'\n','e houveram',tie_humanPC,'empates\n')
-#---Computador vs Computador-------------------------------------------------------------------------------------------
+#---Computador_vs_Computador-------------------------------------------------------------------------------------------
     elif modo == 3:
         saida3 = 1
         win_pc1 = 0
@@ -90,13 +91,14 @@ while exit != "desligar":
                 tie_pcPc = + 1
             elif pc1 or pc2 != {1,2,3}:
                 print("PC jogou sujo!!!\n")
+            #---Sair_Modo----------------------------------------------------------------------------------------------
             sair = int(input("Se deseja sair do jogo, digite '0'. Caso contrário, digite '1': \n"))
             if sair == 0:
                 saida3 = 0
             elif sair == 1:
                 saida3 == 1
         print('As estatística foram;\n','O PC-1 ganhou:',win_pc1,'\n','O PC-2 ganhou:',win_pc2,'\n','e houveram',tie_pcPc,'empates\n')
-#---Sair do Jogo--------------------------------------------------------------------------------------------------------
+#---Sair_do_Jogo--------------------------------------------------------------------------------------------------------
     elif modo  == 0:
         exit = "desligar"
     else:
