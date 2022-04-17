@@ -42,7 +42,7 @@ while exit != 1:
                 saida1 = 0
             elif sair == 1:
                 continue  
-        print('As estatística foram;\n','O jogador 1 ganhou:',win1,'\n','O jogador 2 ganhou:',win2,'\n','e houveram',tie,'empate(s)\n')
+        print('As estatísticas foram;\n','O jogador 1 ganhou:',win1,'\n','O jogador 2 ganhou:',win2,'\n','e houveram',tie,'empate(s)\n')
         print("-------------------------------------------")
 #---Humano_vs_Computador----------------------------------------------------------------------------------------------- 
     elif modo == 2:
@@ -77,7 +77,7 @@ while exit != 1:
                 break
             elif sair == 1:
                 continue                  
-        print('As estatística foram;\n','O Player ganhou:',winPlayer,'\n','O PC ganhou:',winPC,'\n','e houveram',tie_humanPC,'empate(s)\n')
+        print('As estatísticas foram;\n','O Player ganhou:',winPlayer,'\n','O PC ganhou:',winPC,'\n','e houveram',tie_humanPC,'empate(s)\n')
         print("-------------------------------------------")
 #---Computador_vs_Computador-------------------------------------------------------------------------------------------
     elif modo == 3:
@@ -112,7 +112,7 @@ while exit != 1:
                 break
             elif sair == 1:
                 continue              
-        print('As estatística foram;\n','O PC-1 ganhou:',win_pc1,'\n','O PC-2 ganhou:',win_pc2,'\n','e houveram',tie_pcPc,'empate(s)\n')
+        print('As estatísticas foram;\n','O PC-1 ganhou:',win_pc1,'\n','O PC-2 ganhou:',win_pc2,'\n','e houveram',tie_pcPc,'empate(s)\n')
         print("-------------------------------------------")
 #---MODO_BÔNUS---------------------------------------------------------------------------------------------------------
     elif modo == 4:
@@ -148,7 +148,7 @@ while exit != 1:
                 break
             elif sair == 1:
                 continue                  
-        print('As estatística foram;\n','O Player ganhou:',winPlayer,'\n','O PC ganhou:',winPC,'\n','e houveram',tie_humanPC,'empate(s)\n')
+        print('As estatísticas foram;\n','O Player ganhou:',winPlayer,'\n','O PC ganhou:',winPC,'\n','e houveram',tie_humanPC,'empate(s)\n')
         print("-------------------------------------------")
 #---Sair_do_Jogo--------------------------------------------------------------------------------------------------------
     else:
