@@ -43,6 +43,7 @@ while exit != 1:
             elif sair == 1:
                 continue  
         print('As estatística foram;\n','O jogador 1 ganhou:',win1,'\n','O jogador 2 ganhou:',win2,'\n','e houveram',tie,'empate(s)\n')
+        print("-------------------------------------------")
 #---Humano_vs_Computador----------------------------------------------------------------------------------------------- 
     elif modo == 2:
         print("Você escolheu o modo Humano vs PC\n")
@@ -77,6 +78,7 @@ while exit != 1:
             elif sair == 1:
                 continue                  
         print('As estatística foram;\n','O Player ganhou:',winPlayer,'\n','O PC ganhou:',winPC,'\n','e houveram',tie_humanPC,'empate(s)\n')
+        print("-------------------------------------------")
 #---Computador_vs_Computador-------------------------------------------------------------------------------------------
     elif modo == 3:
         saida3 = 1
@@ -111,8 +113,9 @@ while exit != 1:
             elif sair == 1:
                 continue              
         print('As estatística foram;\n','O PC-1 ganhou:',win_pc1,'\n','O PC-2 ganhou:',win_pc2,'\n','e houveram',tie_pcPc,'empate(s)\n')
+        print("-------------------------------------------")
 #---MODO_BÔNUS---------------------------------------------------------------------------------------------------------
-    if modo == 4:
+    elif modo == 4:
         print("Você escolheu o modo extra - Humano vs PC com adição de mais duas jogadas!!!\n")
         print("     Regras do jogo;\n","1 =>Pedra: papel > spock > |pedra| > tesoura > lagarto\n","2 =>Papel: tesoura > lagarto > |papel| > spock > pedra\n","3 =>Tesoura: spock > pedra > |tesoura| > lagarto > papel\n","4 =>Lagarto: pedra > tesoura > |lagarto| > papel > spock\n","5 =>Spock: lagarto > papel > |spock| > pedra > tesoura\n")
         print("     Opções de jogada;\n","1 - Pedra\n","2 - Papel\n","3 - Tesoura\n","4 - Lagarto\n","5 - Spock\n")
